@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Ofertas</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/nicepage.css') }}" media="screen">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/Ofertas.css') }}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ url_for('static',filename='js/nicepage.js') }}" defer=""></script>
+    <meta name="generator" content="Nicepage 3.27.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/shadow.css') }}" />
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "HermesCommerce",
+		"logo": "images/logo13.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Ofertas">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body">
+
+    {% if sesion_iniciada %}
+    <header class=" u-clearfix u-header u-section-row-container" id="sec-163c"><div class="u-section-rows" style="margin-bottom: 0px;">
+      <div class="u-section-row u-section-row-1" id="sec-3599">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <img class="u-image u-image-default u-preserve-proportions u-image-1" src="/static/images/shopping-cart.png" alt="" data-image-width="512" data-image-height="512" data-href="/carrito" data-page-id="357918232">
+          <a href="/" data-page-id="99019593" class="u-image u-logo u-image-2" data-image-width="73" data-image-height="60" title="Home">
+            <img src="/static/images/logo13.png" class="u-logo-image u-logo-image-1">
+          </a>
+      
+          <form action="#" method="get" class="u-border-1 u-border-grey-30 u-search u-search-left u-white u-search-1">
+            <button class="u-search-button" type="submit">
+              <span class="u-search-icon u-spacing-10">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 56.966 56.966"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-d6d2"></use></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-d6d2" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" class="u-svg-content"><path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"></path></svg>
+              </span>
+            </button>
+            <input class="u-search-input" type="search" name="search" value="" placeholder="Buscar Producto">
+          </form>
+          <img class="u-image u-image-round u-preserve-proportions u-radius-10 u-image-3" src="/static/images/g448cfac4867759ba5ead0363d8c3a96e8081635f0ef7ee19b87aa5cffa02c21f5a42f5ac843290fe2a7b76c916c8182d_12803.png" alt="" data-image-width="150" data-image-height="99">
+          <img class="u-image u-image-default u-preserve-proportions u-image-4" src="/static/images/heart.png" alt="" data-image-width="512" data-image-height="512" data-href="/lista" data-page-id="240959724">
+          <input readonly="readonly" style="width:110px;pointer-events: none;border:none; font-weight: bolder; font-size: 15px;color:#084a88" class="u-image u-image-default u-preserve-proportions u-image-14" type="text" data-image-width="512" data-image-height="512" data-page-id="240959724" value="{{ perfil }}">
+        </div>
+        
+        
+      </div>
+      <div class="u-border-2 u-border-palette-1-base u-clearfix u-custom-color-3 u-section-row u-section-row-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="" id="sec-9e7d">
+        <div class="u-clearfix u-sheet u-sheet-2">
+          <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+            <div class="menu-collapse" style="font-size: 1.25rem; letter-spacing: 0px; text-transform: uppercase; font-weight: 700;">
+              <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-border-radius u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+                </symbol>
+                </defs></svg>
+              </a>
+            </div>
+              <div class="u-custom-menu u-nav-container">
+                <ul class="u-nav u-spacing-100 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-white u-text-hover-palette-4-dark-2 u-text-white" href="/" style="padding: 10px 0px;">Inicio</a>
+                </li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-white u-text-hover-palette-4-dark-2 u-text-white" href="/ofertas" style="padding: 10px 0px;">Ofertas</a>
+                </li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-white u-text-hover-palette-4-dark-2 u-text-white" href="/categorias" style="padding: 10px 0px;">Categorias</a>
+                </li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-white u-text-hover-palette-4-dark-2 u-text-white" href="/micuenta" style="padding: 10px 0px;">Mi Cuenta</a>
+                </li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-white u-text-hover-palette-4-dark-2 u-text-white" style="padding: 10px 0px;"><form action="/" method="POST">
+                  <input style="background-color: inherit; border:none; font-size: 22px;" type="submit" value="Cerrar sesion">
+                </form></a>
+                </li></ul>
+              </div>
+              <div class="u-custom-menu u-nav-container-collapse">
+                <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                  <div class="u-inner-container-layout u-sidenav-overflow">
+                    <div class="u-menu-close"></div>
+                    <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/" style="padding: 10px 0px;">Inicio</a>
+                    </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/ofertas" style="padding: 10px 0px;">Ofertas</a>
+                    </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/categorias" style="padding: 10px 0px;">Categorias</a>
+                    </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/micuenta" style="padding: 10px 0px;">Mi Cuenta</a>
+                    </li></ul>
+                  </div>
+                </div>
+                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+              </div>
+            </nav>
+          </div>          
+        </div>
+      </div></header>
+      {% else %}
+    
+        <header class=" u-clearfix u-header u-section-row-container" id="sec-163c"><div class="u-section-rows" style="margin-bottom: 0px;">
+          <div class="u-section-row u-section-row-1" id="sec-3599">
+            <div class="u-clearfix u-sheet u-sheet-1">
+              <img class="u-image u-image-default u-preserve-proportions u-image-1" src="/static/images/shopping-cart.png" alt="" data-image-width="512" data-image-height="512" data-href="Carrito.html" data-page-id="357918232">
+              <a href="/" data-page-id="99019593" class="u-image u-logo u-image-2" data-image-width="73" data-image-height="60" title="Home">
+                <img src="/static/images/logo13.png" class="u-logo-image u-logo-image-1">
+              </a>
+              <form action="#" method="get" class="u-border-1 u-border-grey-30 u-search u-search-left u-white u-search-1">
+                <button class="u-search-button" type="submit">
+                  <span class="u-search-icon u-spacing-10">
+                    <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 56.966 56.966"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-d6d2"></use></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-d6d2" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" class="u-svg-content"><path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"></path></svg>
+                  </span>
+                </button>
+                <input class="u-search-input" type="search" name="search" value="" placeholder="Buscar Producto">
+              </form>
+              <img class="u-image u-image-round u-preserve-proportions u-radius-10 u-image-3" src="/static/images/g448cfac4867759ba5ead0363d8c3a96e8081635f0ef7ee19b87aa5cffa02c21f5a42f5ac843290fe2a7b76c916c8182d_12803.png" alt="" data-image-width="150" data-image-height="99">
+            </div>
+            
+            
+          </div>
+          <div class="u-border-2 u-border-palette-1-base u-clearfix u-custom-color-3 u-section-row u-section-row-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="" id="sec-9e7d">
+            <div class="u-clearfix u-sheet u-sheet-2">
+              <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+                <div class="menu-collapse" style="font-size: 1.25rem; letter-spacing: 0px; text-transform: uppercase; font-weight: 700;">
+                  <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-border-radius u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+        </symbol>
+        </defs></svg>
+                  </a>
+                </div>
+                <div class="u-custom-menu u-nav-container">
+                  <ul class="u-nav u-spacing-100 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-white u-text-hover-palette-4-dark-2 u-text-white" href="/" style="padding: 10px 0px;">Inicio</a>
+                  </li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-white u-text-hover-palette-4-dark-2 u-text-white" href="/ofertas" style="padding: 10px 0px;">Ofertas</a>
+                  </li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-white u-text-hover-palette-4-dark-2 u-text-white" href="/categorias" style="padding: 10px 0px;">Categorias</a>
+                  </li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-white u-text-hover-palette-4-dark-2 u-text-white" href="/login" style="padding: 10px 0px;">Iniciar Sesión</a>
+                  </li><li class="u-nav-item"><a class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-white u-button-style u-nav-link u-text-active-white u-text-hover-palette-4-dark-2 u-text-white" href="/registro" style="padding: 10px 0px;">Registrarse</a>
+                  </li></ul>
+                </div>
+                <div class="u-custom-menu u-nav-container-collapse">
+                  <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                    <div class="u-inner-container-layout u-sidenav-overflow">
+                      <div class="u-menu-close"></div>
+                      <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/" style="padding: 10px 0px;">Inicio</a>
+                      </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/ofertas" style="padding: 10px 0px;">Ofertas</a>
+                      </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/categorias" style="padding: 10px 0px;">Categorias</a>
+                      </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/login" style="padding: 10px 0px;">Iniciar Sesión</a>
+                      </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/registro" style="padding: 10px 0px;">Registrarse</a>
+                      </li></ul>
+                    </div>
+                  </div>
+                  <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+                </div>
+              </nav>
+            </div>
+              
+            
+          </div>
+        </div></header>
+      {% endif %}
+
+
+    <section class="u-clearfix u-palette-5-light-3 u-section-1" id="sec-f422">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-align-left u-custom-color-2 u-shape u-shape-svg u-text-palette-4-light-2 u-shape-1" data-animation-name="zoomIn" data-animation-duration="1000" data-animation-delay="750" data-animation-direction="">
+          <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" styles=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-edf0"></use></svg>
+          <svg class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-edf0" style="enable-background:new 0 0 160 160;"><path d="M151.7,132.5c-3.4,6-7.9,11.7-13.3,16.5c-29.2,26.1-54.1-2.3-88.2-3S0,109.5,0,91.6s14.8-31.3,25.3-45.3S33.4,11,51.8,3
+	c15.3-6.6,33.6-0.4,51.6,0.7c11.2,0.7,28.8-3.8,38.2,0.4s11.8,15.4,9.2,22.8c-1.9,5.4-5.5,11.6-12.8,16.5
+	c-9.3,10.1-4.7,22.9,3.7,33.4c7.8,9.7,17.7,11.7,18.3,23.5C160.4,110.8,157.6,122.2,151.7,132.5L151.7,132.5z"></path></svg>
+        </div>
+        <div class="u-image u-image-circle u-preserve-proportions u-image-1" alt="" data-image-width="202" data-image-height="249" data-animation-name="pulse" data-animation-duration="1000" data-animation-delay="0" data-animation-direction=""></div>
+        <div class="u-align-left u-custom-color-2 u-shape u-shape-svg u-text-palette-4-light-2 u-shape-2" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="750" data-animation-direction="">
+          <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" styles=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-e70b"></use></svg>
+          <svg class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-e70b" style="enable-background:new 0 0 160 160;"><path d="M151.7,132.5c-3.4,6-7.9,11.7-13.3,16.5c-29.2,26.1-54.1-2.3-88.2-3S0,109.5,0,91.6s14.8-31.3,25.3-45.3S33.4,11,51.8,3
+	c15.3-6.6,33.6-0.4,51.6,0.7c11.2,0.7,28.8-3.8,38.2,0.4s11.8,15.4,9.2,22.8c-1.9,5.4-5.5,11.6-12.8,16.5
+	c-9.3,10.1-4.7,22.9,3.7,33.4c7.8,9.7,17.7,11.7,18.3,23.5C160.4,110.8,157.6,122.2,151.7,132.5L151.7,132.5z"></path></svg>
+        </div>
+        <div class="u-border-1 u-border-grey-75 u-image u-image-circle u-image-2" alt="" data-image-width="1080" data-image-height="1350" data-animation-name="pulse" data-animation-duration="1000" data-animation-delay="0" data-animation-direction=""></div>
+        <div class="u-align-left u-custom-color-2 u-shape u-shape-svg u-text-palette-4-light-2 u-shape-3" data-animation-name="bounceIn" data-animation-duration="1000" data-animation-delay="750" data-animation-direction="">
+          <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" styles=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7b64"></use></svg>
+          <svg class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-7b64" style="enable-background:new 0 0 160 160;"><path d="M151.7,132.5c-3.4,6-7.9,11.7-13.3,16.5c-29.2,26.1-54.1-2.3-88.2-3S0,109.5,0,91.6s14.8-31.3,25.3-45.3S33.4,11,51.8,3
+	c15.3-6.6,33.6-0.4,51.6,0.7c11.2,0.7,28.8-3.8,38.2,0.4s11.8,15.4,9.2,22.8c-1.9,5.4-5.5,11.6-12.8,16.5
+	c-9.3,10.1-4.7,22.9,3.7,33.4c7.8,9.7,17.7,11.7,18.3,23.5C160.4,110.8,157.6,122.2,151.7,132.5L151.7,132.5z"></path></svg>
+        </div>
+        <div class="u-image u-image-circle u-preserve-proportions u-image-3" alt="" data-image-width="860" data-image-height="1074" data-href="https://nicepage.com" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction=""></div>
+        <form action="/categorias/" method="POST">
+          <input type="hidden" name="nombre" value="Moda">
+          <input class="u-border-3 u-border-active-palette-1-light-3 u-border-hover-palette-3-light-2 u-border-palette-4-dark-2 u-btn u-button-style u-gradient u-hover-palette-4-light-2 u-none u-text-black u-btn-1" type="submit" value="DESCUENTO EN TODAS LAS MODAS">
+        </form>
+        
+        </a>
+      </div>
+    </section>
+    
+    <section class="u-align-center u-clearfix u-palette-5-light-3 u-section-3" id="carousel_d579">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-left u-text u-text-1">Productos con ofertas</h2>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+
+     
+          <div class="shadow-dreamy">
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <form action="/producto/tal" method="POST">
+                  <input class="imagen2" title="a" alt="" name="g" src="/static/images/6024464fa0f178f710386c1e0e3dcc58-product.jpg" style="width: 310px; height:310px" type="image" />
+                  <input type="hidden" name="titulo" value="Audífono Diadema">
+                </form>
+                
+                <h3 class="u-text u-text-2">50% Desc</h3>
+                <h6 class="u-text u-text-3">Audifonos Diadema</h6>
+              </div>
+            </div>
+          </div>
+     
+
+        
+          <div class="shadow-dreamy">
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <form action="/producto/tal" method="POST">
+                  <input class="imagen2" title="LAPTOP GAMER PREDATOR" alt="" name="g" src="/static/images/Screenshot_9.png" style="width: 310px; height:310px" type="image" />
+                  <input type="hidden" name="titulo" value="LAPTOP GAMER PREDATOR">
+                </form>
+                <h3 class="u-text u-text-4"> 25% Desc</h3>
+                <h6 class="u-text u-text-5">LAPTOP GAMER PREDATOR</h6>
+              </div>
+            </div>
+          </div>
+        
+     
+          <div class="shadow-dreamy">
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <form action="/producto/tal" method="POST">
+                  <input class="imagen2" title="XIAOMI REDMI 10 128GB" alt="" name="g" src="/static/images/Screenshot_1.jpg" style="width: 310px; height:310px" type="image" />
+                  <input type="hidden" name="titulo" value="XIAOMI REDMI 10 128GB">
+                </form>
+                <h3 class="u-text u-text-6">40% Desc</h3>
+                <h6 class="u-text u-text-7">XIAOMI REDMI 10 128GB</h6>
+              </div>
+            </div>
+          </div>
+       
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-custom-color-3 u-footer u-footer" id="sec-e062"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Proyecto Mision TIC 2022</p>
+      </div></footer>
+
+  </body>
+</html>

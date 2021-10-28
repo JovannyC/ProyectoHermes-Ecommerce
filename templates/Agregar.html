@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Agregar</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/nicepage.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Agregar.css') }}" type="text/css">
+    <script class="u-script" type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ url_for('static',filename='js/nicepage.js') }}" defer=""></script>
+    <meta name="generator" content="Nicepage 3.27.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica:400">
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "HermesCommerce"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Agregar">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body">
+    {% if rol == "superadmin" %}
+    <section class="u-clearfix u-custom-color-3 u-section-1" id="sec-d9d0">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <a href="/dashboard" data-page-id="896509189" class="u-border-4 u-border-white u-btn u-button-style u-none u-radius-0 u-text-body-alt-color u-btn-1">INICIO</a>
+        <a href="/agregar" data-page-id="261420404" class="u-border-4 u-border-white u-btn u-button-style u-none u-radius-0 u-text-body-alt-color u-btn-2">AGREGAR</a>
+        <a href="/editar" data-page-id="75931186" class="u-border-4 u-border-white u-btn u-button-style u-none u-radius-0 u-text-body-alt-color u-btn-3">EDITAR</a>
+        <a href="/eliminar" data-page-id="108301776" class="u-border-4 u-border-white u-btn u-button-style u-none u-radius-0 u-text-body-alt-color u-btn-4">ELIMINAR</a>
+      </div>
+    </section>
+    {% else %}
+    <section class="u-clearfix u-custom-color-3 u-section-1" id="sec-fc63">
+      <div style="margin-left: 230px;" class="u-clearfix u-sheet u-sheet-1">
+        <a href="/dashboards" data-page-id="99019593" class="u-border-4 u-border-white u-btn u-button-style u-none u-radius-0 u-text-body-alt-color u-btn-11">INICIO</a>
+        <a href="/agregar" data-page-id="99019593" class="u-border-4 u-border-white u-btn u-button-style u-none u-radius-0 u-text-body-alt-color u-btn-22">AGREGAR</a>
+        <a href="/cerrar" data-page-id="99019593" class="u-border-4 u-border-white u-btn u-button-style u-none u-radius-0 u-text-body-alt-color u-btn-44">CERRAR SESIÓN</a>
+      </div>
+    </section>
+    {% endif %}
+
+
+    <p style="color: red; text-align: center;">
+      {{ men }}
+    </p>
+    <section class="u-align-center u-clearfix u-gradient u-section-2" id="sec-0358">
+      <h1 class="u-custom-font u-text u-text-custom-color-3 u-title u-text-1">Agregar Producto</h1>
+      <form action="/agregar" method="POST" source="custom" name="form" style="padding-left: 25%; padding-right: 25%;">
+      <br>
+      <div class="u-form-group u-form-name">
+        <label for="name-2154" class="u-form-control-hidden u-label"></label>
+        <input type="text" placeholder="Codigo del Producto" id="name-2154" name="codigo" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+      </div>
+      <br>
+      <div class="u-form-group u-form-group-2">
+        <label for="text-18f7" class="u-form-control-hidden u-label"></label>
+        <input type="text" placeholder="Nombre del Producto" id="text-18f7" name="nombre" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+      </div>
+      <br>
+      <div class="u-form-group u-form-group-3">
+        <label for="text-1f6c" class="u-form-control-hidden u-label"></label>
+        <input type="text" placeholder="Categoría del Producto" id="text-1f6c" name="categoria" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+      </div>
+      <br>
+      <div class="u-form-group u-form-group-4">
+        <label for="text-47f8" class="u-form-control-hidden u-label"></label>
+        <input type="text" placeholder="Cantidad Disponible del Producto" id="text-47f8" name="cantidad" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+      </div>
+      <br>
+      <div class="u-form-group u-form-group-5">
+        <label for="text-a7a5" class="u-form-control-hidden u-label"></label>
+        <input type="text" placeholder="Precio del Producto" id="text-a7a5" name="precio" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+      </div>
+      <br>
+      <div class="u-form-group u-form-message">
+        <label for="message-2154" class="u-form-control-hidden u-label"></label>
+        <textarea placeholder="Descripción del Producto" rows="4" cols="50" id="message-2154" name="descripcion" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required=""></textarea>
+      </div>
+      <br>
+      <input type="file" name="foto" />
+      <br>
+      <p><input type="submit" value="Agregar"></p>
+      
+    </form>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-custom-color-3 u-footer u-footer" id="sec-e062"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Proyecto Mision TIC 2022</p>
+      </div></footer>
+    </section>
+  </body>
+</html>
